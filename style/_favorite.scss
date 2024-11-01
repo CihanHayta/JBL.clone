@@ -1,0 +1,43 @@
+.favorite {
+    h2{
+        color: white;
+        text-align: center;
+    }
+
+    text-align: center;
+    padding: 10px 40px;
+
+    &-card {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+      
+        span{
+            color: white;
+        }
+
+        img {
+            width: 200px;
+            transition: all 0.3s;
+
+            &:hover {
+                scale: 1.18;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+// responsive 
+
+@media(max-width:850px){
+    .favorite{
+        &-card{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
